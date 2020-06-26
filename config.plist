@@ -40,7 +40,8 @@
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array></array>
+		<array>
+		</array>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -165,11 +166,12 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array></array>
+		<array>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
-			<true/>
+			<false/>
 			<key>DevirtualiseMmio</key>
 			<true/>
 			<key>DisableSingleUser</key>
@@ -192,6 +194,8 @@
 			<false/>
 			<key>ProvideCustomSlide</key>
 			<true/>
+			<key>ProvideMaxSlide</key>
+			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
 			<key>SetupVirtualMap</key>
@@ -364,7 +368,8 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array></array>
+		<array>
+		</array>
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
@@ -373,7 +378,8 @@
 			<data></data>
 		</dict>
 		<key>Patch</key>
-		<array></array>
+		<array>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -411,7 +417,8 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array/>
+		<array>
+		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -425,7 +432,7 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>External</string>
+			<string>Builtin</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -453,7 +460,8 @@
 			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
-		<array></array>
+		<array>
+		</array>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -539,10 +547,16 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>booter-fileset-kernel</key>
+				<data>AA==</data>
+				<key>booter-fileset-basesystem</key>
+				<data>AA==</data>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 agdpmod=pikera slide=0 shikigva=80</string>
+				<string>agdpmod=pikera slide=0 shikigva=80 -v</string>
+				<key>run-efi-updater</key>
+				<string>No</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -563,6 +577,8 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
+				<string>booter-fileset-kernel</string>
+				<string>booter-fileset-basesystem</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
@@ -634,6 +650,8 @@
 		<dict>
 			<key>EnableJumpstart</key>
 			<true/>
+			<key>GlobalConnect</key>
+			<false/>
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
@@ -652,11 +670,11 @@
 			<key>AudioOut</key>
 			<integer>0</integer>
 			<key>AudioSupport</key>
-			<true/>
+			<false/>
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
-			<true/>
+			<false/>
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
@@ -666,8 +684,6 @@
 		<array>
 			<string>HfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
-			<string>OpenCanopy.efi</string>
-			<string>AudioDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -764,7 +780,8 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array></array>
+		<array>
+		</array>
 	</dict>
 </dict>
 </plist>
