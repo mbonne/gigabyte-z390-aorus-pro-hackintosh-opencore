@@ -59,13 +59,13 @@ Please understand all OpenCore configuration by reading [Configuration.pdf](http
 - Handoff
 - Airdrop
 - Continuity
-- AirPlay
-- Apple TV+ - Only works on monitor@**DP**
-- Netflix in Safari - Monitor **MUST** be connected via **DP**, for multi monitor setup, **ALL** monitor **MUST** be connected via **DP**. **DO NOT USE HDMI**
 
 ##### Not Tested
 - FileVault
 - Power Nap
+- AirPlay
 
 ##### Not Working
 - Built-in WiFi and Bluetooth. This will never work, dont even waste time here. If you absolutely need Bluetooth and WiFi, get the BCM94360CS2 card.
+- Apple TV+
+- Netflix in Safari
