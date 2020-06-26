@@ -16,10 +16,10 @@ Compile latest OC from [here](https://github.com/acidanthera/OpenCorePkg)
 
 ## Kext - Compile on your own
 - [Lilu.kext](https://github.com/acidanthera/Lilu)
-- [VirtualSMC.kext](https://github.com/acidanthera)
-- [WhateverGreen.kext](https://github.com/acidanthera)
-- [AppleALC.kext](https://github.com/acidanthera)
-- [IntelMausi.kext](https://github.com/acidanthera)
+- [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC)
+- [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen)
+- [AppleALC.kext](https://github.com/acidanthera/AppleALC)
+- [IntelMausi.kext](https://github.com/acidanthera/IntelMausi)
 - USBPorts.kext - Grab from your current machine
 - SMCProcessor.kext - Included in VirtualSMC package
 - SMCSuperIO.kext - Included in VirtualSMC package
@@ -32,7 +32,6 @@ Compile latest OC from [here](https://github.com/acidanthera/OpenCorePkg)
 
 ## config.plist
 
-- Use `config_usb.plist` for installation media(USB).
 - Use `config.plist` for internal boot disk.
 
 ## EFI Folder Structure
