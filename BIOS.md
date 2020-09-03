@@ -4,7 +4,7 @@ BIOS version: `F11`
 
 - Load Optimized Defaults
 - Settings -> IO Ports -> Internal Graphics -> Enabled
-- Settings -> IO Ports -> DVMT Pre-Allocated -> 32M
+- Settings -> IO Ports -> DVMT Pre-Allocated -> 32M *HAVENT CHANGED THIS*
 - Settings -> IO Ports -> Wi-Fi -> Disabled
 - Settings -> IO Ports -> Above 4G Decoding -> Enabled
 - Settings -> IO Ports -> Wake on LAN Enable -> Disabled
@@ -14,6 +14,9 @@ BIOS version: `F11`
 - Settings -> Miscellaneous -> Trusted Computing -> Security Device Support -> Disabled
 - Boot -> CSM Support -> Disabled
 
+- Enabled XMP Profile 1 for RAM
+
+TODO:
 ## Hidden BIOS setting
 This setting can be modified using [modGRUBShell.efi](https://github.com/datasone/grub-mod-setup_var/releases/download/1.1/modGRUBShell.efi)
 ⚠️: These offset are only valid for the specific firmware version! Do not try to execute these commands on a different firmware! 
