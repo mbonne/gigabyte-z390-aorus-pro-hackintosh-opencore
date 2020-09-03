@@ -1,5 +1,5 @@
 # Hackintosh Opencore 0.6.0 Installation Guide for Gigabyte Z390 Aorus Pro - Catalina(>=10.15.2)
-## Using the Blacklizard repo as a starting point. https://github.com/blacklizard/gigabyte-z390-aorus-pro-wifi-hackintosh-opencore
+## Using the [Blacklizard repo](https://github.com/blacklizard/gigabyte-z390-aorus-pro-wifi-hackintosh-opencore) as a starting point.
 
 ![System Info](images/system.png)
 
@@ -9,18 +9,17 @@
 
 Type|Item
 :----|:----
-**CPU** | [Intel - Core i5-9400](https://shopee.com.my/product/18799831/1830724338)
-**CPU Cooler** | [Cooler Master Hyper 212](https://shopee.com.my/product/27186464/1049199653) 
-**Motherboard** | [Gigabyte - Z390 AORUS PRO WiFi](https://shopee.com.my/product/18799831/1830724338)
-**Memory** | [Kingston HyperX FURY 16GB](https://shopee.com.my/product/44965307/1790719113)
-**Storage (macOS)** | [ADATA XPG SX8200 Pro 512GB](https://shopee.com.my/product/84969687/1883571808)
-**Storage (Windows)** | [KINGSTON A400 256GB](https://shopee.com.my/product/29242218/1103855234)
-**Video Card** | [SAPPHIRE PULSE RX 5700 XT OC](about:blank)
-**WiFi + Bluetooth** | [BCM943602CS](https://www.aliexpress.com/item/32847834498.html) + [PCI-E Adaptor](https://shopee.com.my/product/162227071/3405707076)
-**Case** | [ECLIPSE P400A](https://shopee.com.my/product/1422162/6808915755)
-**Power Supply** | [Cooler Master V1000 80+ Gold Modular](https://shopee.com.my/product/47928376/3300926225)
-**Monitor 1** | [DELL U2718Q](https://www.dell.com/si/business/p/dell-u2718q-monitor/pd)
-**Monitor 2** | [DELL U2720Q](https://www.dell.com/en-my/shop/ultrasharp-27-4k-usb-c-monitor-u2720q/apd/210-auzy/monitors-monitor-accessories)
+**CPU** | [Intel - Core i9 9900K]
+**CPU Cooler** | [Dark Rock Pro]
+**Motherboard** | [Gigabyte - Z390 AORUS PRO]
+**Memory** | [Corsair Vengance LPX 64GB Kit]
+**Storage (macOS)** | [Samsung mSata 1TB]
+**Storage (Windows)** | [Samsung Stata 256GB]
+**Video Card** | [SAPPHIRE Nitro+ 5700XT SE]
+**WiFi + Bluetooth** | TODO: [BCM943602CS](https://www.aliexpress.com/item/32847834498.html) + [PCI-E Adaptor](https://shopee.com.my/product/162227071/3405707076)
+**Case** | [Define 7 Compact]
+**Power Supply** | [Fractal 870w 80+ Gold Modular]
+**Monitor 2** | [DELL 27" 4K]
 
 ### Prerequisite 
 Please understand all OpenCore configuration by reading [Configuration.pdf](https://github.com/acidanthera/OpenCorePkg/blob/0.5.9/Docs/Configuration.pdf) 
@@ -40,6 +39,8 @@ Please understand all OpenCore configuration by reading [Configuration.pdf](http
 1. [BCM943602CS WIN10 BT/WiFi Driver](https://mega.nz/file/h5ozUZCS#XVszB3yWDcyhaNxahbMWJLiEmnmGpqbuAnahyGDdv7Y)
 
 ### What's Working/What's Not
+
+- TO BE VERIFIED - This build is currently under construction...
 
 ##### Working
 - Ethernet
