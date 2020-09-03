@@ -1,5 +1,5 @@
 # Hackintosh Opencore 0.6.0 Installation Guide for Gigabyte Z390 Aorus Pro - Catalina(>=10.15.2)
-## Using the Blacklizard repo as a starting point.
+## Using the Blacklizard repo as a starting point. https://github.com/blacklizard/gigabyte-z390-aorus-pro-wifi-hackintosh-opencore
 
 ![System Info](images/system.png)
 
