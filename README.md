@@ -1,34 +1,46 @@
-# Hackintosh Opencore 0.6.0 Installation Guide for Gigabyte Z390 Aorus Pro - Catalina(>=10.15.2)
+# [Opencore 0.6.0](https://dortania.github.io/OpenCore-Install-Guide/) - Gigabyte Z390 Aorus Pro - Catalina 10.15.6
 ## Using the [Blacklizard repo](https://github.com/blacklizard/gigabyte-z390-aorus-pro-wifi-hackintosh-opencore) as a starting point.
-## And completed with this guide from AudioGod [LINK insanelymac site](https://www.insanelymac.com/forum/topic/339980-audiogods-aorus-z390-pro-patched-dsdt-mini-guide-and-discussion/)
+## Completed with this guide from AudioGod: [LINK insanelymac site](https://www.insanelymac.com/forum/topic/339980-audiogods-aorus-z390-pro-patched-dsdt-mini-guide-and-discussion/)
+## Additional Tips from [cmer](https://github.com/cmer/gigabyte-z390-aorus-master-hackintosh) - [CFG Lock](https://www.youtube.com/watch?v=W4JXVNJsK98)
 
 ![System Info](images/system.png)
+![Build](images/Build.jpg)
 
-### This guide is not intended for beginner, you have been warned. No support is provided unless there is a valid issue. Please read everything before starting
 
-### Hardware
+### This is not a guide.
+
+
+## [The Hardware](https://au.pcpartpicker.com/b/BYQqqs)
 
 Type|Item
 :----|:----
-**CPU** | [Intel - Core i9 9900K]
-**CPU Cooler** | [Dark Rock Pro]
-**Motherboard** | [Gigabyte - Z390 AORUS PRO]
-**Memory** | [Corsair Vengance LPX 64GB Kit]
-**Storage (macOS)** | [Samsung mSata 1TB]
-**Storage (Windows)** | [Samsung Stata 256GB]
-**Video Card** | [SAPPHIRE Nitro+ 5700XT SE]
-**WiFi + Bluetooth** | TODO: [BCM943602CS](https://www.aliexpress.com/item/32847834498.html) + [PCI-E Adaptor](https://shopee.com.my/product/162227071/3405707076)
-**Case** | [Define 7 Compact]
-**Power Supply** | [Fractal 870w 80+ Gold Modular]
-**Monitor 2** | [DELL 27" 4K]
+**CPU** | Intel - Core i9 9900K
+**CPU Cooler** | Dark Rock Pro
+**Motherboard** | Gigabyte - Z390 Aorus Pro - ATX - LGA 1151
+**Memory** | Corsair Vengance LPX 64GB Kit (DDR4-3200 CL16)
+**Storage (macOS)** | Samsung 860 Evo 1TB M.2-2280 SSD
+**Storage (Windows)** | Samsung Sata 250GB
+**Video Card** | Sapphire Radeon RX 5700 XT 8GB Nitro+ SE
+**Case** | Fractal Define 7 Compact
+**Power Supply** | Fractal Design Ion+ 860W 80+ Platinum ATX Modular
+**Monitor** | DELL 27" 4K
+TO ADD:
+**WiFi + Bluetooth** | [BCM943602CS](https://www.aliexpress.com/item/32847834498.html) + [PCI-E Adaptor](https://shopee.com.my/product/162227071/3405707076)
 
-### Prerequisite 
-Please understand all OpenCore configuration by reading [Configuration.pdf](https://github.com/acidanthera/OpenCorePkg/blob/0.5.9/Docs/Configuration.pdf) 
+### Prerequisite:
+<u>READ THE DOCS</u><br>
+Understand all OpenCore configuration by reading their docs: [Link](https://dortania.github.io/OpenCore-Install-Guide/)<br>
+For this exact build: [Link](https://www.insanelymac.com/forum/topic/339980-audiogods-aorus-z390-pro-patched-dsdt-mini-guide-and-discussion/)<br>
+Understanding CFG Lock: [Link](https://www.youtube.com/redirect?event=video_description&v=W4JXVNJsK98&redir_token=QUFFLUhqbjA0ckdvZjd3NHIzVVpFcVdGdS1UekZCWi1qd3xBQ3Jtc0trakZnRkNaMVJIWnEwd1VTelY5NEVjQWstWEJOTmVYdUFmTGlIVF9LcVZDZzhrU1NWTDUtOWUtYkxEMmFqVk0yT1B3RzQ5RS1CRlRZcUVQNk5Td2NFWFRyWkdHbTJmcGdTX0djZmtneTJNMVNfTkswRQ%3D%3D&q=https%3A%2F%2Fdortania.github.io%2FOpenCore-Desktop-Guide%2Fextras%2Fmsr-lock.html)<br>
 
-### Required Tools
-- [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
-- [EFI-Agent](https://github.com/headkaze/EFI-Agent)
-- [Hackintool](https://github.com/headkaze/Hackintool)
+
+
+### Required Tools and Files
+- [audiogod](https://www.insanelymac.com/forum/topic/339980-audiogods-aorus-z390-pro-patched-dsdt-mini-guide-and-discussion/) - Gets you 95% there if using exact same hardware
+- [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) - Used for generating your serial numbers.
+- [UEFITool](https://www.youtube.com/redirect?event=video_description&v=W4JXVNJsK98&redir_token=QUFFLUhqbGlfcTh1ZVNsRFVoQmUxdXp6a0NEV2pqNjZTd3xBQ3Jtc0trdHVhejV6TWxNbGZ6UWJPM1UybTFrcjNIT01Yc2YzcHJhV2NYVlU1YmFBQjJjbjVXNHg4VE1TZFhscEwycDNrVDgxal9aZS1pTTl6ODVWYm84VkRSUllyZHh6RTVsd0ZOMkt4d1NmRmNjSW9RRzlEMA%3D%3D&q=https%3A%2F%2Fgithub.com%2FLongSoft%2FUEFITool%2Freleases) - Find and extract bin from firmware file
+- [IFRExtractor](https://www.youtube.com/redirect?event=video_description&v=W4JXVNJsK98&redir_token=QUFFLUhqbkVDMzhmYndYNmZUSHk3bFpzRHZnQ2t4N3I4UXxBQ3Jtc0tuS3pwMnNPdWVXY1ptbzNadDhTeEhqRDNqSW1DTjFrUnZJVzhnb0VFOEF3dXMtSmJOTzZBWlhfV2F5SkRua1ZJbUFHcXVwTVRLQmNXaFkxUTI1OEJGbTFqZC1kVTAyTUFrc21WN1VaN0NDZFhzTFFwdw%3D%3D&q=https%3A%2F%2Fgithub.com%2FLongSoft%2FUniversal-IFR-Extractor%2Freleases) - convert binary to .txt file
+- [MountEFI](https://www.youtube.com/redirect?event=video_description&v=W4JXVNJsK98&redir_token=QUFFLUhqbEZoYUlvMG9UUGVGM01FcmFtZG1QSnM1aFVpZ3xBQ3Jtc0trS015bThkTUJZUmZ6WHhtM2c3c0lTSmhpZTRfM29WYU9LSkd1Y1dJdU5fNnBlSzlHQUduelJwdVVTSVFrWmtiejdJbkhrZVVvMF9DVUF5dTc2UFI3bXNNczFMODVvREZMbHJmWS1DODZucTRxUDdrbw%3D%3D&q=https%3A%2F%2Fgithub.com%2Fcorpnewt%2FMountEFI) - Mounts your hidden EFI partition
 
 ### Step By Step Installation Guide
 1. [BIOS configuration](BIOS.md)
@@ -41,34 +53,22 @@ Please understand all OpenCore configuration by reading [Configuration.pdf](http
 
 ### What's Working/What's Not
 
-- TO BE VERIFIED - This build is currently under construction...
+- This build is currently under construction...
 
 ##### Working
 - Ethernet
 - Onboard Audio
-- HDMI Audio
-- DP Audio
 - IGPU in headless mode
 - App Store
 - Wake/Sleep
 - Restart
 - Shutdown
 - USB (Correct SS/HS speed)
-- All DP and HDMI port
-- Dual monitor from boot
-- Apple Music (iTunes)
 - iMessage
-- Facetime
-- Handoff
-- Airdrop
-- Continuity
-- AirPlay
-- Apple TV+ - Only works on monitor@**DP**
-- Netflix in Safari - Monitor **MUST** be connected via **DP**, for multi monitor setup, **ALL** monitor **MUST** be connected via **DP**. **DO NOT USE HDMI**
+
 
 ##### Not Tested
-- FileVault
-- Power Nap
+
 
 ##### Not Working
-- Built-in WiFi and Bluetooth. This will never work, dont even waste time here. If you absolutely need Bluetooth and WiFi, get the BCM94360CS2 card.
+
