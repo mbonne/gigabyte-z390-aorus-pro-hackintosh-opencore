@@ -10,7 +10,7 @@ Follow this guide: [https://www.tonymacx86.com/threads/the-new-beginners-guide-t
 >
 > UtterDisbelief
 
-## For sleep to work properly
+## For sleep to work properly:
 
 ```
 sudo pmset hibernatemode 0
