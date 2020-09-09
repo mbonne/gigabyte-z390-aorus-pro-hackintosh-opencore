@@ -1,6 +1,6 @@
 # [Opencore 0.6.0](https://dortania.github.io/OpenCore-Install-Guide/) - Gigabyte Z390 Aorus Pro - Catalina 10.15.6
 ## Using the [Blacklizard repo](https://github.com/blacklizard/gigabyte-z390-aorus-pro-wifi-hackintosh-opencore) as a starting point.
-## Completed with this guide from AudioGod: [LINK insanelymac site](https://www.insanelymac.com/forum/topic/339980-audiogods-aorus-z390-pro-patched-dsdt-mini-guide-and-discussion/)
+## Completed with the Boss guide from AudioGod: [LINK insanelymac site](https://www.insanelymac.com/forum/topic/339980-audiogods-aorus-z390-pro-patched-dsdt-mini-guide-and-discussion/) - Install of OS worked first time, and then minor adjustments and tweaks to further customise.
 ## Additional Tips from [cmer](https://github.com/cmer/gigabyte-z390-aorus-master-hackintosh) - [CFG Lock](https://www.youtube.com/watch?v=W4JXVNJsK98)
 
 ![System Info](images/system.png)
